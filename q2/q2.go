@@ -2,13 +2,11 @@ package q2
 
 import (
 	"fmt"
-	"strconv"
 	"strings"
 )
 
 func AverageLettersPerWord(text string) (float64, error) {
-	_, err := strconv.Atoi(text)
-	if len(text) == 0 || err == nil || text == " " {
+	if len(strings.TrimSpace(text)) == 0 {
 		return 0, fmt.Errorf("texto vazio")
 	} else {
 		palavras := strings.Split(text, " ")
