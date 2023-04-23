@@ -1,4 +1,4 @@
-package main
+package q3
 
 import "fmt"
 
